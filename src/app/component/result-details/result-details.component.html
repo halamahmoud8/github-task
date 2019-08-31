@@ -1,0 +1,27 @@
+<div class="container">
+
+  <button type="button" class="btn btn-danger float-right" [routerLink]="['/github/repositories']">Back</button>
+  <div class="card mb-6" style="max-width: 740px;">
+    <div class="row no-gutters">
+      <div class="col-md-6">
+        <img src="{{data.owner.avatar_url}}" class="card-img" alt="">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">Repository Details</h5>
+          <p class="card-text"><b>Full Name:</b> {{data.full_name}}</p>
+          <p class="card-text"><b>Language:</b> {{data.language}}</p>
+          <p class="card-text"><b>Forks Count:</b> {{data.forks_counts}}</p>
+          <p class="card-text"><b>Stargazers Count:</b> {{data.stargazers_count}}</p>
+          <p class="card-text"><b>Size:</b> {{data.size}}</p>
+          <p class="card-text">{{data.description}}</p>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
